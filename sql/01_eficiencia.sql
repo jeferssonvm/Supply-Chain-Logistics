@@ -27,5 +27,5 @@ SELECT
     porcentaje_retardo,
     RANK() OVER(PARTITION BY type ORDER BY porcentaje_retardo DESC) AS ranking
 FROM por_categoia
-ORDER BY type, ranking;
+ORDER BY type ranking;
 
