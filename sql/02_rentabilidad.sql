@@ -31,5 +31,7 @@ WITH  rutas_costos_flete  AS (
     group by origin, destination
 )SELECT Origin, destination, cantidad_envios, costo_promedio_envio,
     RANK() OVER(ORDER BY costo_promedio_envio DESC) AS ranking
-    WHERE ranking <= 3
- FROM rutas_costos_flete;
+    FROM rutas_costos_flete
+    order by ranking
+    limit 3
+;
