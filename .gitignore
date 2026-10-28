@@ -1,6 +1,7 @@
 # ── Datos (van en Drive, no en GitHub) ─────────────────────────
 /data
 
+supply_chain.session.sql
 # ── Python ──────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]

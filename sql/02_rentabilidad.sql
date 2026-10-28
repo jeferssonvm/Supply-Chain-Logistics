@@ -1,4 +1,4 @@
---que categoría tiene el flete más caro en proporción a su valor
+--que categoria tiene el flete mas caro en proporción a su valor  = ninguno todos estan en 5% de costo 
     SELECT product_category,
     COUNT(*) AS Envios,
     SUM(freight_cost) AS costo_flete_total,
@@ -6,6 +6,12 @@
     from shipment
     GROUP BY product_category
     ORDER BY porcentaje_costo_envio DESC;   
+
+-- se nota que costo esta estandarizado todos aparecen con 5%
+-- consumer goods es una mercancia barata por la cantidad de envios y el costo de flete  total
+--industrial es la mercancia mas cara y con menos envios 
+
+
 
 --precio del combustible influye en los retrasos?
 SELECT
@@ -21,8 +27,13 @@ SELECT
     group by rango_precio_combustible
     order by rango_precio_combustible;
 
-select * FROM logistics;
+--  la mayoria de dias el combustible esta en medio 
+-- de bajo a alto el retraso casi se duplica puede ser correlacion  mas no causalidad 
+-- son poco datos para sacar conclusiones
 
+
+
+-- ¿Cuáles son las 3 rutas más caras de enviar?
 WITH  rutas_costos_flete  AS (
     select origin ,destination, 
     count(*) AS cantidad_envios,
@@ -35,3 +46,7 @@ WITH  rutas_costos_flete  AS (
     order by ranking
     limit 3
 ;
+-- las rutas mas caras son de mumbai
+-- yokohama a mumbai es la mas cara
+-- el flete es 5 del valor entonces no es la ruta cara son productos caros
+-- mumbai parece como el centro de todo
