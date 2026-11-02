@@ -4,7 +4,7 @@ Análisis de una empresa ficticia de logística internacional con Python, SQL y 
 
 **Herramientas:** Python (pandas, seaborn, matplotlib) · SQL (SQLite) · Power BI (DAX)
 
-<!-- Captura principal del dashboard: docs/img/01-portada.png -->
+![Dashboard](docs/img/01-portada.png)
 
 ## Problema
 
@@ -64,7 +64,7 @@ Se utilizó SQLite ya que la base de datos queda en un solo archivo dentro del p
 - Entregar rápido no sube la calificación, pero cuando la entrega pasa de 18 días la satisfacción baja de golpe (de 4.21 a 3.13). Lo importante no es ser el primero, sino llegar a tiempo.
 - Asia-Pacífico es el segmento que más compra y el más barato de conseguir. Sin embargo, es el que más retrasos tiene. A pesar de esto, mantiene la mejor satisfacción. Posiblemente el cliente entiende que la ruta es complicada, o no hay mucha variedad de empresas que ofrezcan el servicio de transporte. Cabe resaltar que es importante cuidar este segmento, ya que es el que más deja a la empresa.
 - El costo de conseguir un cliente es casi igual en todas las regiones. Lo que cambia es cuánto compra cada cliente.
-- África tiene la satisfacción más baja (3.73) y la mayor cantidad de tickets por cliente. Sin embargo, no se puede saber la causa, ya que no hay datos de transporte para esta región.
+- África tiene la satisfacción más baja (3.73) y la mayor cantidad de tickets por cliente. Posiblemente se debe a que tiene tiempos de entrega altos, de 18 días en promedio.
 
 ## Recomendaciones
 
@@ -76,13 +76,25 @@ Se utilizó SQLite ya que la base de datos queda en un solo archivo dentro del p
 
 ## Capturas
 
-<!-- Pendiente: capturas del PDF exportado en docs/img/
+**Eficiencia:** retraso, ocupación del almacén y envíos por transportista.
+
 ![Eficiencia](docs/img/02-eficiencia.png)
+
+**Rentabilidad:** facturación, gasto en fletes y su relación con el precio del combustible.
+
 ![Rentabilidad](docs/img/03-rentabilidad.png)
+
+**Experiencia del cliente:** satisfacción, tickets de soporte y tiempo de entrega por región.
+
 ![Experiencia del cliente](docs/img/04-cliente.png)
+
+**Análisis geográfico:** flujos entre países, valor por país de origen y días de aduana por destino.
+
 ![Análisis geográfico](docs/img/05-geografico.png)
+
+**Tooltip del transportista:** al pasar el mouse sobre un transportista se ven sus reclamos, retraso y ocupación.
+
 ![Tooltip del transportista](docs/img/06-tooltip.png)
--->
 
 ## Límites
 
