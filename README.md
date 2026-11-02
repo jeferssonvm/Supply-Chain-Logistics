@@ -36,7 +36,7 @@ No se encontraron duplicados.
 ## Enfoque
 
 1. **Python:** preanálisis y limpieza ([`notebook/eda.ipynb`](notebook/eda.ipynb)).
-2. **Power BI:** dashboard de 5 páginas con modelo estrella, tabla calendario, tabla de medidas y un tooltip que muestra el detalle de cada transportista sin cambiar de página ([`pbix/`](pbix/)).
+2. **Power BI:** dashboard de 5 páginas con modelo estrella, tabla calendario, tabla de medidas y un tooltip que muestra el detalle de cada transportista sin cambiar de página. El `.pbix` y el PDF se pueden descargar en la [release v1.0](https://github.com/jeferssonvm/Supply-Chain-Logistics/releases/tag/v1.0).
 3. **SQL:** preguntas de eficiencia, rentabilidad, cliente y geografía, con CTE y funciones de ventana ([`sql/`](sql/)).
 
 Se utilizó SQLite ya que la base de datos queda en un solo archivo dentro del proyecto y no necesita un servidor.
@@ -108,4 +108,4 @@ Con datos reales se haría el mismo proceso desde cero, con una limpieza más de
 2. Ejecutar `notebook/eda.ipynb` (requiere pandas, numpy, matplotlib y seaborn). Guarda los datos limpios en `data/processed/`.
 3. Ejecutar `python scripts/load_to_sqlite.py` para crear `data/supply_chain.db`.
 4. Abrir las consultas de `sql/` con cualquier cliente de SQLite (se utilizó VS Code con SQLTools).
-5. Abrir `pbix/analisis.pbix` con Power BI Desktop.
+5. Abrir `pbix/analisis.pbix` con Power BI Desktop, o descargarlo de la [release v1.0](https://github.com/jeferssonvm/Supply-Chain-Logistics/releases/tag/v1.0).
