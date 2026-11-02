@@ -33,3 +33,10 @@ desktop.ini
 # ── Power BI: archivos temporales y de bloqueo ─────────────────
 ~$*.pbix
 *.pbix.tmp
+
+# ── Power BI (.pbip): caché y configuración local ──────────────
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
+
+# ── Respaldos locales ───────────────────────────────────────────
+docs/respaldo_*/
